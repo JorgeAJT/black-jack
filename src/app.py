@@ -53,3 +53,4 @@ def black_jack():
     print(f"The game was ended, the player doesn't have enough money to bet 😢")
     return print("Please recharge your bank and play again soon! 😉")
 
+#ugh
