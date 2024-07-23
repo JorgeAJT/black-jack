@@ -21,7 +21,7 @@ This project simulates a game of Black Jack where the player competes against th
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/blackjack-python.git
+   git clone https://github.com/JorgeAJT/black-jack.git
    
 2. Navigate to the project directory
 
