@@ -49,8 +49,11 @@ This project simulates a game of Black Jack where the player competes against th
 ## Game Rules
 
 1. Initial Deal: Two cards are dealt to the player and two to the dealer. One of the dealer's cards remains hidden until the end of the game.
+   
 2. Player's Turn: The player can choose to "Hit" (receive an additional card) or "Stand" (keep their current hand), in case it is not a straight blackjack, in that case the player win directly.
+   
 3. Dealer's Turn: After the player stands, the dealer reveals their hidden card and decides to "Hit" or "Stand" based on fixed rules (typically, the dealer hits on 16 or less and stands on 17 or more).
+   
 4. Determining the Winner:
  - If the player exceeds 21, they lose.
  - If the dealer exceeds 21, the player wins.
