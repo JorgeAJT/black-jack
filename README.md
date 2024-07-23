@@ -1,4 +1,4 @@
-# Black Jack Project in Python ♥ ♠ ♦ ♣
+# Black Jack Project in Python <span style="color:red;">♥</span> ♠ <span style="color:red;">♦</span> ♣
 
 Welcome to the Black Jack project in Python! This project is a simple implementation of the popular card game Black Jack, developed entirely in Python.
 
