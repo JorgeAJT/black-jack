@@ -1,5 +1,5 @@
-from src.utils import (card_generator, bet, player_turn, dealer_turn,
-                       check_results, distribute_money, check_int_input)
+from src.utils import (bet, player_turn, dealer_turn, distribute_money, check_int_input,
+                       generate_starting_cards, is_blackjack, check_player_results, check_general_results)
 
 
 def black_jack():
@@ -12,28 +12,28 @@ def black_jack():
 
     while amounts["player_bank"] > 0:
         print(f"Round: {round}")
-        generated_cards = [] # empty variables always declare them at the top of the logical block
 
         round += 1
         bet(amounts)
 
-        player_card1, generated_cards = card_generator(generated_cards) # this is duplicated 4 times, make a function for it
-        player_card2, generated_cards = card_generator(generated_cards)
-        dealer_card1, generated_cards = card_generator(generated_cards)
-        dealer_card2, generated_cards = card_generator(generated_cards)
+        player_cards, dealer_cards, generated_cards = generate_starting_cards()
 
-        print("Your cards", player_card1, player_card2)
-        print("Dealer cards", dealer_card1, "[?, ?]")
+        print("Your cards", player_cards[0], player_cards[1])
+        print("Dealer cards", dealer_cards[0], "[?, ?]")
 
-        player_result, generated_cards = player_turn(player_card1, player_card2, generated_cards)
-        input("Press Enter key to continue with the dealer's turn...")
+        result = is_blackjack(player_cards, dealer_cards)
 
+        if result == "continue playing":
+            player_result, generated_cards = player_turn(player_cards[0], player_cards[1], generated_cards)
+            result = check_player_results(player_result)
 
+            if result == "continue playing":
+                input("Press Enter key to continue with the dealer's turn...")
+                dealer_result, generated_cards = dealer_turn(dealer_cards[0], dealer_cards[1], generated_cards)
 
-        dealer_result, generated_cards = dealer_turn(dealer_card1, dealer_card2, generated_cards)
-        input("Press Enter key to check results...")
+                input("Press Enter key to check results...")
+                result = check_general_results(player_result, dealer_result)
 
-        result = check_results(player_result, dealer_result)
         distribute_money(result, amounts)
 
         if amounts["player_bank"] == 0:
@@ -52,5 +52,3 @@ def black_jack():
 
     print(f"The game was ended, the player doesn't have enough money to bet 😢")
     return print("Please recharge your bank and play again soon! 😉")
-
-#ugh
