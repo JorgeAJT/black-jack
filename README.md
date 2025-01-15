@@ -103,6 +103,7 @@ In this Python implementation, you’ll play against a computer-controlled deale
    python main.py
    
 ## Usage
+
 When you run python `main.py`, the console will guide you through each step:
 
 1. **Enter Your Bank**: The game asks how much money you want to start with.
@@ -112,61 +113,87 @@ When you run python `main.py`, the console will guide you through each step:
 3. **Cards Dealt**: Two cards to you and two to the dealer (one of the dealer’s cards remains hidden initially).
 
 4. **Player Action**:
+    
     - If you have an ACE, choose whether it’s worth 1 or 11.
       
     - Input `Y` to draw another card (Hit) or `N` to stand.
 
 5. **Dealer Action**:
+    
     - The dealer’s hidden card is revealed.
+   
     - The dealer must follow a simple rule: hit until the total is at least 17, then stand.
 
 6. **Results**:
+    
     - If you or the dealer bust (> 21), the other side wins.
+      
     - If totals tie, the number of cards each has can break the tie (fewest cards wins).
+      
     - Or it’s a true tie if both have the same number of cards.
 
 7. **Bank Updates**:
+    
     - If you win, your bank increases by twice your bet.
+      
     - If you lose, you forfeit your bet.
+      
     - If it’s a tie, you get your bet back.
 
 8. **Play Again or Quit**:
+    
     - Continue until you run out of money or choose to stop.
 
 ## Gameplay Rules
 1. **Initial Deal**:
+    
     - Two cards are dealt to the player, and two cards to the dealer.
+      
     - One of the dealer’s cards is hidden until the dealer’s turn.
 
 2. **Player’s Turn**:
+    
     - Check if you have a natural Blackjack (ACE + face card / 10).
+      
     - Otherwise, choose “Hit” to take another card or “Stand” to hold your total.
+      
     - If you exceed 21 (bust), you lose immediately.
-Dealer’s Turn:
+      
+3. **Dealer’s Turn**:
 
-The hidden card is revealed.
-Dealer hits until reaching a total of at least 17, then stands.
-If the dealer exceeds 21, the dealer busts, and the player wins.
-Determining the Winner:
+    - The hidden card is revealed.
 
-If you bust, you lose.
-If the dealer busts, you win.
-If both totals remain ≤ 21, the higher total wins.
-Tie-Break: If both totals are equal, the player with fewer cards wins. If the number of cards is also equal, it’s a true tie.
-Bet Resolution:
+    - Dealer hits until reaching a total of at least 17, then stands.
 
-Win: your bank increases by double your bet (bet * 2).
-Lose: you lose your bet to the dealer.
-Tie: you get your bet back.
-How the Code Works
-Below is a brief overview of each utility module in src/utils:
+    - If the dealer exceeds 21, the dealer busts, and the player wins.
 
-card_generator.py:
-Generates random cards (number or face card + suit) without repetition. Uses random from the Python standard library.
+4. **Determining the Winner**:
 
-check_card.py:
-Determines the numeric value of a card (e.g., face cards = 10, ACE = 1 or 11).
-For the dealer, ACE is chosen automatically; for the player, it prompts.
+    - If you bust, you lose.
+
+    - If the dealer busts, you win.
+
+    - If both totals remain ≤ 21, the higher total wins.
+
+    - **Tie-Break**: If both totals are equal, the player with fewer cards wins. If the number of cards is also equal, it’s a true tie.
+
+5. **Bet Resolution**:
+
+    - Win: your bank increases by double your bet (bet * 2).
+
+    - Lose: you lose your bet to the dealer.
+
+    - Tie: you get your bet back.
+
+## How the Code Works
+
+Below is a brief overview of each utility module in `src/utils`:
+
+- `card_generator.py`:
+      Generates random cards (number or face card + suit) without repetition. Uses `random` from the Python standard library.
+- `check_card.py`:
+      Determines the numeric value of a card (e.g., face cards = 10, ACE = 1 or 11).
+      For the dealer, ACE is chosen automatically; for the player, it prompts.
 
 check_int_input.py:
 Ensures user input for bank amount or bet is a valid integer and not greater than the current bank.
