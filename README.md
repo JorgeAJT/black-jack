@@ -97,24 +97,31 @@ In this Python implementation, you’ll play against a computer-controlled deale
 When you run python `main.py`, the console will guide you through each step:
 
 1. **Enter Your Bank**: The game asks how much money you want to start with.
+
 2. **Bet**: Each round, decide how much you want to bet.
+
 3. **Cards Dealt**: Two cards to you and two to the dealer (one of the dealer’s cards remains hidden initially).
+
 4. **Player Action**:
     - If you have an ACE, choose whether it’s worth 1 or 11.
     - Input `Y` to draw another card (Hit) or `N` to stand.
-   5. **Dealer Action**:
-        - The dealer’s hidden card is revealed.
-        - The dealer must follow a simple rule: hit until the total is at least 17, then stand.
-   6. **Results**:
-        - If you or the dealer bust (> 21), the other side wins.
-        - If totals tie, the number of cards each has can break the tie (fewest cards wins).
-        - Or it’s a true tie if both have the same number of cards.
-   7. **Bank Updates**:
-        - If you win, your bank increases by twice your bet.
-        - If you lose, you forfeit your bet.
-        - If it’s a tie, you get your bet back.
-   8. **Play Again or Quit**:
-        - Continue until you run out of money or choose to stop.
+
+5. **Dealer Action**:
+    - The dealer’s hidden card is revealed.
+    - The dealer must follow a simple rule: hit until the total is at least 17, then stand.
+
+6. **Results**:
+    - If you or the dealer bust (> 21), the other side wins.
+    - If totals tie, the number of cards each has can break the tie (fewest cards wins).
+    - Or it’s a true tie if both have the same number of cards.
+
+7. **Bank Updates**:
+    - If you win, your bank increases by twice your bet.
+    - If you lose, you forfeit your bet.
+    - If it’s a tie, you get your bet back.
+
+8. **Play Again or Quit**:
+    - Continue until you run out of money or choose to stop.
 
 ## Gameplay Rules
 1. Initial Deal:
