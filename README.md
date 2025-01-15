@@ -145,6 +145,7 @@ When you run python `main.py`, the console will guide you through each step:
     - Continue until you run out of money or choose to stop.
 
 ## Gameplay Rules
+
 1. **Initial Deal**:
     
     - Two cards are dealt to the player, and two cards to the dealer.
@@ -190,7 +191,6 @@ When you run python `main.py`, the console will guide you through each step:
 Below is a brief overview of each utility module in `src/utils`:
 
 - card_generator.py:
-
   Generates random cards (number or face card + suit) without repetition. Uses `random` from the Python standard library.
   
 - `check_card.py`:
