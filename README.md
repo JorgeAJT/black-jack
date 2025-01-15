@@ -97,11 +97,11 @@ In this Python implementation, you’ll play against a computer-controlled deale
 When you run python `main.py`, the console will guide you through each step:
 
 1. **Enter Your Bank**: The game asks how much money you want to start with.
-   2. **Bet**: Each round, decide how much you want to bet.
-   3. **Cards Dealt**: Two cards to you and two to the dealer (one of the dealer’s cards remains hidden initially).
-   4. **Player Action**:
-        - If you have an ACE, choose whether it’s worth 1 or 11.
-        - Input `Y` to draw another card (Hit) or `N` to stand.
+2. **Bet**: Each round, decide how much you want to bet.
+3. **Cards Dealt**: Two cards to you and two to the dealer (one of the dealer’s cards remains hidden initially).
+4. **Player Action**:
+    - If you have an ACE, choose whether it’s worth 1 or 11.
+    - Input `Y` to draw another card (Hit) or `N` to stand.
    5. **Dealer Action**:
         - The dealer’s hidden card is revealed.
         - The dealer must follow a simple rule: hit until the total is at least 17, then stand.
