@@ -225,15 +225,13 @@ Contributions are very welcome! If you have ideas for improvements or bug fixes:
 
 3. Make your changes and commit with descriptive messages:
     ```bash
-    git commit -m "Add new feature X"
+    git commit -m "Add new feature  or fix bug"
 
 4. Push the branch to your forked repository:
     ```bash
     git push origin feature/new-feature
 
-5. Create a Pull Request to the main branch of this repository.
-
-6. Wait for maintainers to review and provide feedback.
+5. Create a Pull Request on GitHub and wait for review.
 
 ## Author
 
