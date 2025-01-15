@@ -4,25 +4,25 @@ Welcome to the **Blackjack** project in Python! This repository contains a fully
 
 ## Table of Contents
 
-1. Overview
+1. [Overview](#overview)
 
-2. Features
+2. [Features](#features)
 
-3. Project Structure
+3. [Project Structure](#project-structure)
 
-4. Requirements
+4. [Requirements](#requirements)
 
-5. Installation
+5. [Installation](#installation)
 
-6. Usage
+6. [Usage](#usage)
 
-7. Gameplay Rules
+7. [Gameplay Rules](#gameplay-rules)
 
-8. How the Code Works
+8. [How the Code Works](#how-the-code-works)
 
-9. Contributing
+9. [Contributing](#contributing)
 
-10. Author
+10. [Author](#author)
 
 ## Overview
 Blackjack (also known as 21) is one of the most popular casino card games. The objective is simple: get as close to **21** as possible without exceeding it, and beat the dealer’s hand.
@@ -217,20 +217,26 @@ Below is a brief overview of each utility module in `src/utils`:
 
 Contributions are very welcome! If you have ideas for improvements or bug fixes:
 
-Fork the repository.
-Create a new branch:
-bash
-Copiar código
-git checkout -b my-new-feature
-Make changes and commit:
-bash
-Copiar código
-git commit -m "Add new feature or fix bug"
-Push to your fork:
-bash
-Copiar código
-git push origin my-new-feature
-Create a Pull Request on GitHub and wait for review.
-Author
-Jorge Jiménez – JorgeAJT
+1. Fork this repository.
+
+2. Create a new branch for your feature or fix:
+    ```bash
+    git checkout -b feature/new-feature
+
+3. Make your changes and commit with descriptive messages:
+    ```bash
+    git commit -m "Add new feature X"
+
+4. Push the branch to your forked repository:
+    ```bash
+    git push origin feature/new-feature
+
+5. Create a Pull Request to the main branch of this repository.
+
+6. Wait for maintainers to review and provide feedback.
+
+## Author
+
+:man_technologist: Jorge Jiménez - [JorgeAJT](https://github.com/JorgeAJT) :weight_lifting_man:
+
 Feel free to reach out if you have any questions or suggestions!
