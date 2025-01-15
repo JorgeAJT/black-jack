@@ -113,6 +113,7 @@ When you run python `main.py`, the console will guide you through each step:
 
 4. **Player Action**:
     - If you have an ACE, choose whether it’s worth 1 or 11.
+      
     - Input `Y` to draw another card (Hit) or `N` to stand.
 
 5. **Dealer Action**:
