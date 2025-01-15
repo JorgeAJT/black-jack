@@ -192,37 +192,29 @@ Below is a brief overview of each utility module in `src/utils`:
 
 - `card_generator.py`:  
   Generates random cards (number or face card + suit) without repetition. Uses `random` from the Python standard library.
-  
-- `check_card.py`:
+- `check_card.py`:  
+  Determines the numeric value of a card (e.g., face cards = 10, ACE = 1 or 11).
+  For the dealer, ACE is chosen automatically; for the player, it prompts.
+- `check_int_input.py`:  
+  Ensures user input for bank amount or bet is a valid integer and not greater than the current bank.
+- `check_results.py`:  
+  Contains functions like is_blackjack(), check_player_results(), and check_general_results() to handle the logic of natural blackjack, busts, ties, and 
+  final outcomes.
+- `dealer_turn.py`:  
+  Implements the dealer’s logic. The dealer draws cards until reaching at least 17.
+- `player_turn.py`:  
+  Handles the player’s actions, including deciding whether to take extra cards or stand.
+- `player_bet.py`:  
+  Deducts the player’s chosen bet from their bank.
+- `distribute_money.py`:  
+  Updates both the player’s and dealer’s bank after each round based on the result.
+- `generate_starting_cards.py`:  
+  Draws the initial four cards (two for the player and two for the dealer).
+- `app.py` (called by `black_jack()`):  
+  Manages the game loop, rounds, and transitions between the different functions above.
 
-      Determines the numeric value of a card (e.g., face cards = 10, ACE = 1 or 11).
-      For the dealer, ACE is chosen automatically; for the player, it prompts.
+## Contributing
 
-check_int_input.py:
-Ensures user input for bank amount or bet is a valid integer and not greater than the current bank.
-
-check_results.py:
-Contains functions like is_blackjack(), check_player_results(), and check_general_results() to handle the logic of natural blackjack, busts, ties, and final outcomes.
-
-dealer_turn.py:
-Implements the dealer’s logic. The dealer draws cards until reaching at least 17.
-
-player_turn.py:
-Handles the player’s actions, including deciding whether to take extra cards or stand.
-
-player_bet.py:
-Deducts the player’s chosen bet from their bank.
-
-distribute_money.py:
-Updates both the player’s and dealer’s bank after each round based on the result.
-
-generate_starting_cards.py:
-Draws the initial four cards (two for the player and two for the dealer).
-
-app.py (called by black_jack()):
-
-Manages the game loop, rounds, and transitions between the different functions above.
-Contributing
 Contributions are very welcome! If you have ideas for improvements or bug fixes:
 
 Fork the repository.
