@@ -1,5 +1,4 @@
 def check_card(card, role, addition=0):
-
     face_cards = {"J", "Q", "K"}
     if card[0] in face_cards:
         card[0] = 10

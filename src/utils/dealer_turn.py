@@ -7,7 +7,7 @@ def dealer_turn(card1_gen, card2_gen, generated_cards):
     all_cards = [card1_gen, card2_gen]
     print(all_cards)
 
-    if card1_gen[0] == "A" and card2_gen[0] == "A": # if AA == "".join(card_gen) ;)
+    if card1_gen[0] == "A" and card2_gen[0] == "A":  # if AA == "".join(card_gen) ;)
         addition = 12
     else:
         card1 = check_card(card1_gen, "dealer")

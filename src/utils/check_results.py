@@ -1,12 +1,10 @@
-
-
 def is_blackjack(player_cards, dealer_cards):
     face_cards = {10, "J", "Q", "K"}
 
     player_blackjack = (player_cards[0][0] == "A" and player_cards[1][0] in face_cards) or (
-                player_cards[1][0] == "A" and player_cards[0][0] in face_cards)
+            player_cards[1][0] == "A" and player_cards[0][0] in face_cards)
     dealer_blackjack = (dealer_cards[0][0] == "A" and dealer_cards[1][0] in face_cards) or (
-                dealer_cards[1][0] == "A" and dealer_cards[0][0] in face_cards)
+            dealer_cards[1][0] == "A" and dealer_cards[0][0] in face_cards)
 
     if player_blackjack and dealer_blackjack:
         print(f"Player Blackjack and Dealer Blackjack! 😱")

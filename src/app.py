@@ -4,7 +4,7 @@ from src.utils import (bet, player_turn, dealer_turn, distribute_money, check_in
 
 def black_jack():
     round = 1
-    dealer_bank = 10000 # static variables always declare them at the top of the logical block
+    dealer_bank = 10000  # static variables always declare them at the top of the logical block
     print(f"The dealer's bank is {dealer_bank}")
 
     player_bank = check_int_input("bank")

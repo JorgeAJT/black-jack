@@ -3,7 +3,7 @@ from random import randint, choice
 
 def card_generator(generated_cards):
     while True:
-        card_number = randint(1,13)
+        card_number = randint(1, 13)
 
         special_cards = {
             1: "A",

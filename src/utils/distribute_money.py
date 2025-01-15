@@ -1,4 +1,3 @@
-
 def distribute_money(result, amounts):
     # Good!
     if result == "loose":

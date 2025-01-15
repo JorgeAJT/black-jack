@@ -1,5 +1,6 @@
 from .card_generator import card_generator
 
+
 def generate_starting_cards():
     generated_cards = []
     for i in range(4):
