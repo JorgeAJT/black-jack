@@ -5,14 +5,23 @@ Welcome to the **Blackjack** project in Python! This repository contains a fully
 ## Table of Contents
 
 1. Overview
+
 2. Features
+
 3. Project Structure
+
 4. Requirements
+
 5. Installation
+
 6. Usage
+
 7. Gameplay Rules
+
 8. How the Code Works
+
 9. Contributing
+
 10. Author
 
 ## Overview
@@ -124,15 +133,14 @@ When you run python `main.py`, the console will guide you through each step:
     - Continue until you run out of money or choose to stop.
 
 ## Gameplay Rules
-1. Initial Deal:
+1. **Initial Deal**:
+    - Two cards are dealt to the player, and two cards to the dealer.
+    - One of the dealer’s cards is hidden until the dealer’s turn.
 
-Two cards are dealt to the player, and two cards to the dealer.
-One of the dealer’s cards is hidden until the dealer’s turn.
-Player’s Turn:
-
-Check if you have a natural Blackjack (ACE + face card / 10).
-Otherwise, choose “Hit” to take another card or “Stand” to hold your total.
-If you exceed 21 (bust), you lose immediately.
+2. **Player’s Turn**:
+    - Check if you have a natural Blackjack (ACE + face card / 10).
+    - Otherwise, choose “Hit” to take another card or “Stand” to hold your total.
+    - If you exceed 21 (bust), you lose immediately.
 Dealer’s Turn:
 
 The hidden card is revealed.
